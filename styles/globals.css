@@ -1,0 +1,46 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --first-color: #2386be;
+  --second-color: #e6e6ef;
+  --third-color: #0b2027;
+  --fourth-color: #8c2155;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: var(--second-color);
+    background: var(--third-color);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.github {
+  font-size: 2rem;
+  fill: var(--second-color);
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+
+.github:hover {
+  transform: scale(1.2);
+}

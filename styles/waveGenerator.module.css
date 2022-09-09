@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.waveInputs {
+  width: fit-content;
+  background: var(--second-color);
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.waveInputs > h1 {
+  text-align: center;
+  color: var(--third-color);
+}
+.waveInputs > div {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.waveInputs > div > * {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.waveInputs > div > label {
+  margin-right: 0.5rem;
+  color: var(--third-color);
+}
+.waveInputs > div > input {
+  max-width: 12.5rem;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  background: var(--first-color);
+  border: none;
+  outline: none;
+}
+.waveInputs > div > input[type='color'] {
+  border-radius: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  margin: auto;
+  border: none;
+  outline: none;
+}
+.waveInputs > div > button {
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  margin: auto;
+  background: var(--first-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.waveInputs > div > button:hover {
+  background: var(--first-color);
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+.msg {
+  visibility: hidden;
+  opacity: 0;
+  justify-content: center !important;
+  color: var(--third-color);
+  margin: auto !important;
+  transition: 0.4s;
+}
+
+.result {
+  max-width: 25rem;
+  background: var(--second-color);
+  color: var(--third-color);
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+}
+
+.waveContainer {
+  margin: 0 auto 4rem auto;
+}
